@@ -569,7 +569,7 @@ if __name__ == '__main__':
 
 	if options.password == '' or options.username == '':
 		print u'请输入用户名密码'
-		return
+		exit(1)
 
 	jd = JDWrapper(options.username, options.password)
 	jd.login_try()
